@@ -1,315 +1,204 @@
-🎓 Smart University Management System
+# 🏠 Hostel Management System
 
-«A Modern Full Stack University Management Platform Built with React.js, Node.js, Express.js, and PostgreSQL.»
-
----
-
-📌 About The Project
-
-Smart University Management System (SUMS) is a comprehensive web-based platform designed to digitize and automate university academic and administrative operations.
-
-The system provides a centralized environment where Students, Teachers, and Administrators can efficiently manage courses, attendance, results, fees, notices, and academic records.
-
-This project aims to eliminate manual processes, improve efficiency, ensure data accuracy, and create a smarter educational ecosystem.
+> A structured 11-week academic project for managing student hostel operations using MySQL, Flask, and Bootstrap.
 
 ---
 
-🎯 Project Objectives
+## 📌 Project Overview
 
-- Automate university management processes.
-- Reduce paperwork and manual record keeping.
-- Improve academic data management.
-- Enhance communication between stakeholders.
-- Provide real-time analytics and reporting.
-- Ensure secure and centralized data storage.
-
----
-
-👥 User Roles
-
-👨‍💼 Admin
-
-- Manage Students
-- Manage Teachers
-- Manage Departments
-- Manage Courses
-- Publish Notices
-- Approve Results
-- Manage Fees
-- Generate Reports
-- Monitor System Activities
-
-👨‍🏫 Teacher
-
-- Take Attendance
-- Manage Courses
-- Upload Marks
-- Publish Results
-- Monitor Student Performance
-- Manage Assignments
-
-👨‍🎓 Student
-
-- Course Registration
-- View Attendance
-- View Results
-- Track GPA
-- Check Fee Status
-- View Notices
-- Manage Profile
+| Field | Details |
+|---|---|
+| **Project Title** | Hostel Management System |
+| **Tech Stack** | MySQL · Flask · HTML · Bootstrap |
+| **Duration** | 11 Weeks |
+| **Modules** | Student · Room · Allocation · Fee · Complaint |
+| **Developer** | AI & Data Science Student |
 
 ---
 
-🚀 Core Features
+## 🎯 Project Objective
 
-Student Management
-
-- Student Registration
-- Student Profile Management
-- Academic History
-- Course Enrollment
-- Attendance Tracking
-- Result Viewing
-
-Teacher Management
-
-- Attendance Management
-- Marks Entry
-- Result Publishing
-- Assignment Monitoring
-- Course Management
-
-Course Management
-
-- Course Creation
-- Credit Hour Management
-- Teacher Assignment
-- Course Registration
-
-Attendance System
-
-- Manual Attendance
-- QR Code Attendance
-- Attendance Statistics
-- Attendance Reports
-
-Result Management
-
-- Marks Entry
-- GPA Calculation
-- Result Generation
-- Result Approval Workflow
-
-Fee Management
-
-- Fee Tracking
-- Payment History
-- Due Fee Monitoring
-- Payment Reports
-
-Notice Management
-
-- Notice Publication
-- Academic Announcements
-- Event Notifications
+Design and develop a web-based **Hostel Management System** that automates the core administrative tasks of a university or college hostel — including student registration, room allocation, fee collection, and complaint tracking.
 
 ---
 
-🤖 Smart Features
+## 🧩 Modules
 
-AI Academic Assistant
-
-Provides instant responses to student and teacher queries.
-
-GPA Predictor
-
-Predicts expected GPA based on current academic performance.
-
-Attendance Risk Detection
-
-Identifies students who are at risk due to low attendance.
-
-Smart Notification System
-
-Automatically sends notifications for:
-
-- Exam Schedules
-- Assignment Deadlines
-- Fee Due Dates
-- Result Publication
-- Course Registration
+| # | Module | Description |
+|---|---|---|
+| 1 | **Student Management** | Register, view, update, and remove student records |
+| 2 | **Room Management** | Manage room inventory, types, and capacity |
+| 3 | **Room Allocation** | Assign and deallocate rooms to students |
+| 4 | **Fee Management** | Track fee payments, dues, and payment history |
+| 5 | **Complaint Management** | Submit, view, and resolve student complaints |
 
 ---
 
-📊 Dashboard Analytics
+## 📅 Weekly Roadmap
 
-The Dashboard provides real-time insights including:
+### ✅ Week 1 — Requirement Analysis
+- Define project objectives and problem statement
+- List all features and functional requirements
+- **Deliverables:** `README.md`, `Requirement_Analysis.pdf`
 
-- Total Students
-- Total Teachers
-- Total Departments
-- Total Courses
-- Average GPA
-- Attendance Statistics
-- Department Performance Analysis
-- Top Performing Students
-- Fee Collection Summary
+### ✅ Week 2 — ER Diagram
+- Design entity-relationship diagram with 5 entities:
+  `Student`, `Room`, `Allocation`, `Fee`, `Complaint`
+- Define relationships and cardinality
+- **Deliverable:** `ER_Diagram.png`
 
----
+### ✅ Week 3 — Database Schema
+- Create normalized SQL tables with Primary Keys and Foreign Keys
+- Tables: `Students`, `Rooms`, `Allocations`, `Fees`, `Complaints`
+- **Deliverable:** `schema.sql`
 
-🗄 Database Design
+### ✅ Week 4 — Sample Data
+- Insert realistic sample records:
+  - 20 Students · 10 Rooms · 10 Fees · 10 Complaints
+- **Deliverable:** `sample_data.sql`
 
-Main Database Tables
+### ✅ Week 5 — Basic SQL Queries
+- Practice: `SELECT`, `WHERE`, `ORDER BY`, `COUNT`, `SUM`, `AVG`
+- **Deliverable:** `basic_queries.sql`
 
-- Users
-- Students
-- Teachers
-- Departments
-- Courses
-- Enrollments
-- Attendance
-- Results
-- Fees
-- Payments
-- Assignments
-- Notices
-- Notifications
+### ✅ Week 6 — JOIN Queries
+- Write multi-table queries:
+  - Student ↔ Room
+  - Student ↔ Fee
+- **Deliverable:** `join_queries.sql`
 
----
+### ✅ Week 7 — Views
+- Create `Student_Room_View` to display combined student and room data
+- **Deliverable:** `views.sql`
 
-🛠 PostgreSQL Concepts Used
+### ✅ Week 8 — Trigger
+- Implement a Room Capacity Check trigger — blocks INSERT when room is full
+- **Deliverable:** `trigger.sql`
 
-- Primary Keys
-- Foreign Keys
-- Constraints
-- JOIN Operations
-- GROUP BY
-- HAVING Clause
-- Aggregate Functions
-- Views
-- Stored Procedures
-- Triggers
-- Indexing
-- Transactions
-- Database Normalization (1NF, 2NF, 3NF)
+### ✅ Week 9 — Flask Backend
+- Build 4–5 page web application:
+  - Dashboard · Students · Rooms · Complaints
+- **Deliverable:** `backend/`
 
----
+### ✅ Week 10 — Frontend Integration
+- Connect MySQL database to Flask frontend
+- Implement Add Student, Add Room, Add Complaint (CRUD)
+- **Deliverable:** `frontend/`
 
-📐 Software Engineering Artifacts
-
-Documentation
-
-- Software Requirement Specification (SRS)
-- Feasibility Study
-- Project Proposal
-
-Design
-
-- Use Case Diagram
-- ER Diagram
-- Data Flow Diagram (DFD)
-- Activity Diagram
-- Sequence Diagram
-
-Testing
-
-- Unit Testing
-- Integration Testing
-- System Testing
-- Testing Report
+### ✅ Week 11 — Final Report & Presentation
+- Compile screenshots, ER Diagram, SQL Queries, and project explanation
+- **Deliverables:** `Final_Report.pdf`, `Presentation.pptx`
 
 ---
 
-💻 Technology Stack
+## 🗂️ Repository Structure
 
-Frontend
-
-- React.js
-- Tailwind CSS
-- Bootstrap
-- Axios
-
-Backend
-
-- Node.js
-- Express.js
-
-Database
-
-- PostgreSQL
-
-Authentication & Security
-
-- JWT Authentication
-- Bcrypt Password Hashing
-- Role-Based Access Control (RBAC)
-
-Development Tools
-
-- Git
-- GitHub
-- VS Code
-- Postman
-
----
-
-🔐 Security Features
-
-- Secure Authentication
-- Password Encryption
-- Role-Based Authorization
-- Protected API Routes
-- Input Validation
-- SQL Injection Prevention
-- Session Management
+```
+hostel-management-system/
+│
+├── README.md
+├── Requirement_Analysis.pdf
+├── ER_Diagram.png
+│
+├── database/
+│   ├── schema.sql
+│   ├── sample_data.sql
+│   ├── basic_queries.sql
+│   ├── join_queries.sql
+│   ├── views.sql
+│   └── trigger.sql
+│
+├── backend/
+│   ├── app.py
+│   ├── config.py
+│   └── routes/
+│
+├── frontend/
+│   ├── templates/
+│   └── static/
+│
+└── docs/
+    ├── Final_Report.pdf
+    └── Presentation.pptx
+```
 
 ---
 
-📈 Expected Outcomes
+## 🛠️ Tech Stack
 
-After implementation, the system will:
-
-- Improve academic management efficiency
-- Reduce administrative workload
-- Increase data accuracy
-- Enhance transparency
-- Support better decision-making
-- Create a fully digital university ecosystem
+| Layer | Technology |
+|---|---|
+| **Database** | MySQL 8.x |
+| **Backend** | Python 3.x + Flask |
+| **Frontend** | HTML5 + Bootstrap 5 |
+| **Version Control** | Git + GitHub |
 
 ---
 
-🔮 Future Enhancements
+## 🚀 How to Run
 
-- Mobile Application
-- Face Recognition Attendance
-- Online Examination System
-- AI-Based Student Performance Prediction
-- Blockchain Certificate Verification
-- Placement & Career Portal
-- Cloud Deployment
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/hostel-management-system.git
+cd hostel-management-system
 
----
+# 2. Install Python dependencies
+pip install flask mysql-connector-python
 
-🏗 System Architecture
+# 3. Setup the database
+mysql -u root -p < database/schema.sql
+mysql -u root -p < database/sample_data.sql
 
-Student / Teacher / Admin
+# 4. Run the Flask app
+cd backend
+python app.py
+```
 
-↓
-
-React.js Frontend
-
-↓
-
-Node.js + Express.js Backend
-
-↓
-
-PostgreSQL Database
+Visit `http://127.0.0.1:5000` in your browser.
 
 ---
 
-📄 Conclusion
+## 📊 ER Diagram Entities
 
-The Smart University Management System is a modern, scalable, and intelligent university management platform that integrates academic and administrative operations into a single centralized system.
+```
+Student ──── Allocation ──── Room
+                │
+               Fee
+                │
+           Complaint
+```
 
-By utilizing React.js, Node.js, Express.js, and PostgreSQL, the project demonstrates practical implementation of Full Stack Development, Database Management Systems, Software Engineering Principles, and Modern Web Technologies to solve real-world educational management challenges.
+| Entity | Primary Key | Foreign Key(s) |
+|---|---|---|
+| Students | student_id | — |
+| Rooms | room_id | — |
+| Allocations | allocation_id | student_id, room_id |
+| Fees | fee_id | student_id |
+| Complaints | complaint_id | student_id |
+
+---
+
+## 📋 Problem Statement
+
+University hostels face significant challenges in managing student records, room assignments, fee collection, and complaint resolution manually. Paper-based systems lead to errors, data loss, and inefficiency. This project solves these problems by providing a centralized, digital hostel management platform.
+
+---
+
+## ✨ Key Features
+
+- 📋 Student registration and profile management
+- 🛏️ Room inventory with capacity enforcement (via DB trigger)
+- 🔗 Room-to-student allocation and deallocation
+- 💳 Fee tracking with payment status
+- 📢 Complaint submission and resolution tracking
+- 📊 Dashboard with summary statistics
+
+---
+
+## 👨‍💻 Author
+
+**Israt Zahan Eva**
+**Department of AI & Data Science**
+*Academic Database Project — 11-Week Plan*
+
+---
